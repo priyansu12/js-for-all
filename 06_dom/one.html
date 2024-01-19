@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning process</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, voluptatibus.</p>
+        <li class = "list-item">1</li>
+        <li class = "list-item">2</li>
+        <li class = "list-item">3</li>
+        <li class = "list-item">4</li>
+
+    </div>
+    <!-- document -->
+    <!-- getElementById('idName').id, .className, .getElementById('title').getAtrribute('class') -->
+    <!-- title.style.backgroundColor = 'red', title.style.padding = "12px" -->
+    <!-- title.textContent, title.innerText, title.innerHTML -->
+    <!-- getElementsByClassName("heading") -->
+
+    <!-- Query selectors most commonly used -->
+    <!-- .querySelector("h1") - Only returns the first H1 element -->
+    <!-- .querySelectorAll("h1") - Returns all the H1 elements -->
+    <!-- .querySelector("#title") - Returns the element with the id of title -->
+    <!-- .querySelector(".heading") - Returns the element with the class of heading -->
+    <!-- .querySelectorAll(".heading") - Returns all the elements with the class of heading -->
+    <!-- .querySelectorAll("div p") - Returns all the p elements inside a div -->
+    <!-- .querySelectorAll("div > p") - Returns all the p elements that are direct children of a div -->
+    <!-- .querySelectorAll("div + p") - Returns all the p elements that are placed immediately after a div -->
+    <!-- .querySelectorAll("div ~ p") - Returns all the p elements that are placed anywhere after a div -->
+    <!-- .querySelectorAll("div, p") - Returns all the div and p elements -->
+    <!-- .querySelectorAll("div, p, h1") - Returns all the div, p and h1 elements -->
+    <!-- .querySelectorAll("div, p, h1, #title") - Returns all the div, p, h1 and the element with the id of title -->
+    <!-- .querySelectorAll("div, p, h1, #title, .heading") - Returns all the div, p, h1, the element with the id of title and the element with the class of heading -->
+    <!-- .querySelectorAll("div, p, h1, #title, .heading, [href]") - Returns all the div, p, h1, the element with the id of title, the element with the class of heading and all the elements with the href attribute -->
+    <!-- .querySelectorAll("div, p, h1, #title, .heading, [href='https://www.google.com']") - Returns all the div, p, h1, the element with the id of title, the element with the class of heading and all the elements with the href attribute that have the value of https://www.google.com 
+    <!-- const tempClassList = document.getElementByClassName("list-item") -->
+    <!-- Array.from(tempClassList) - converts into an array such that we can perform all the desired things.-->
+    <!-- tempClassList.forEach((li) => {
+        console.log(li) -- now the code will be executed, otherwise it shall throw an error message
+    }) -->
+    
+</body>
+</html>
