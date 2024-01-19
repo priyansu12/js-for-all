@@ -11,5 +11,15 @@
 <script>
     const div = document.createElement('h1')
     console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random()*10 + 1);
+    div.setAttribute('title', 'sdf');
+    div.style.color = "red";
+    div.style.padding = "12px";
+    // div.innerText = "Priyansu";
+    const addText = document.createTextNode("Priyansu");
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
 </script>
 </html>
